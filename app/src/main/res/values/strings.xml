@@ -3,4 +3,8 @@
     <string name="nb1">Strona Uczelni</string>
     <string name="nb2">Pokaż</string>
     <string name="tytul">Fajne przyciski</string>
+    <string name="nb3">Moja strona</string>
+    <string name="h2">Wpisz imię</string>
+    <string name="h1">Wpisz adres</string>
+    <string name="nb4">Wyślij</string>
 </resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My first app</string>
+    <string name="nb1">Web university</string>
+    <string name="nb2">Show</string>
+    <string name="tytul">Nice button</string>
+    <string name="nb3">My page</string>
+    <string name="h2">Enter name</string>
+    <string name="h1">Enter addres</string>
+    <string name="nb4">Send</string>
+</resources>

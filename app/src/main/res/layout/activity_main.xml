@@ -45,15 +45,13 @@
         android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="0dp"
         android:layout_marginTop="8dp"
         android:ems="10"
-        android:hint="Wpisz adres"
+        android:hint="@string/h1"
         android:inputType="textPersonName"
         app:layout_constraintLeft_toLeftOf="@+id/bs1"
-        app:layout_constraintTop_toBottomOf="@+id/bs1"
-        android:layout_marginRight="0dp"
-        app:layout_constraintRight_toRightOf="@+id/bs1" />
+        app:layout_constraintRight_toRightOf="@+id/bs1"
+        app:layout_constraintTop_toBottomOf="@+id/bs1" />
 
     <Button
         android:id="@+id/bs2"
@@ -65,4 +63,39 @@
         android:onClick="bs2Click"
         app:layout_constraintLeft_toRightOf="@+id/editText"
         app:layout_constraintTop_toTopOf="@+id/editText" />
+
+    <Button
+        android:id="@+id/bAktuwnosc2"
+        android:layout_width="190dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/nb3"
+        app:layout_constraintEnd_toEndOf="@+id/bs1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <EditText
+        android:id="@+id/eImie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/h2"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/bAktuwnosc2"
+        app:layout_constraintHorizontal_bias="0.393"
+        app:layout_constraintStart_toStartOf="@+id/bAktuwnosc2"
+        app:layout_constraintTop_toBottomOf="@+id/bAktuwnosc2" />
+
+    <Button
+        android:id="@+id/btwa3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nb4"
+        app:layout_constraintBottom_toBottomOf="@+id/eImie"
+        app:layout_constraintEnd_toEndOf="@+id/bs2"
+        app:layout_constraintStart_toStartOf="@+id/bs2"
+        app:layout_constraintTop_toTopOf="@+id/eImie" />
 </android.support.constraint.ConstraintLayout>

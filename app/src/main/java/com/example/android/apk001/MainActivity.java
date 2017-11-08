@@ -10,13 +10,33 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    Button bs1,bs2;
+    Button bs1,bs2,bAkt1,btwa3;
+    EditText ed2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         bs1=(Button)findViewById(R.id.bs1);
         bs2=(Button)findViewById(R.id.bs2);
+        bAkt1=(Button)findViewById(R.id.bAktuwnosc2);
+        btwa3=(Button)findViewById(R.id.btwa3);
+        ed2= (EditText)findViewById(R.id.eImie);
+        bAkt1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent int2 = new Intent(MainActivity.this,StrActivity.class);
+                startActivity(int2);
+            }
+        });
+
+        btwa3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent int3 = new Intent(MainActivity.this,DaneActivity.class);
+                int3.putExtra("Imie",ed2.getText().toString());
+                startActivity(int3);
+            }
+        });
 
     }
     public void bs1Click(View v){
